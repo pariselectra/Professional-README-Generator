@@ -2,13 +2,13 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME =({title, description, liveLink, HTMLlink, CSSlink, JSlink, extraLinks, altTextOne, pathwayImageOne, altTextTwo, pathwayImageTwo, altTextThree, pathwayImageThree, license, licenseLink, contributions, tests, questions}) => {
+const generateREADME =({title, description, liveLink, HTMLlink, CSSlink, JSlink, extraLinks, altTextOne, pathwayImageOne, altTextTwo, pathwayImageTwo, altTextThree, pathwayImageThree, license, licenseLink, contributions, tests, questions}) => 
     `#${title}
     
-    ##Description
+    ## Description
     ${description}
 
-    ##Installation
+    ## Installation
 
     -Live Site: ${liveLink}
 
@@ -20,7 +20,7 @@ const generateREADME =({title, description, liveLink, HTMLlink, CSSlink, JSlink,
 
     -Other Links: ${extraLinks}
 
-    ##Usage
+    ## Usage
 
     ![${altTextOne}](${pathwayImageOne})
 
@@ -28,25 +28,24 @@ const generateREADME =({title, description, liveLink, HTMLlink, CSSlink, JSlink,
 
     ![${altTextThree}](${pathwayImageThree})
 
-    ##License
+    ## License
     ${license}
 
     ${licenseLink}
 
-    ##Contibutions
+    ## Contibutions
     ${contributions}
 
-    ##Testing
+    ## Testing
     ${tests}
 
-    ##Questions
+    ## Questions
     ${questions}
-    `
-}
+    `;
 
 
 // TODO: Create an array of questions for user input
-const questions = [];
+// const questions = [];
 
 inquirer
     .prompt([
@@ -144,10 +143,10 @@ inquirer
 
 // TODO: Create a function to write README file
 .then((response) => {
-    const data = generateREADME(response);
+    const READMEContent = generateREADME(response);
 
-    fs.writeFile('README.md', JSON.stringify(data), (err) =>
-    err ? console.error(err) : console.log('Success!'))
+    fs.writeFile('README.md', READMEContent, (err) =>
+    err ? console.error(err) : console.log('Success!'));
 })
 
 
