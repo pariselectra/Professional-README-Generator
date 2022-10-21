@@ -18,14 +18,4 @@
 ## License
     MIT License
 
-    linkMITlicense.com
-
-## Contibutions
-    no other contributions
-
- ## Testing
-    undefined
-
- ## Questions
-    none!
-    
+    https://github.com/pariselectra/Professional-README-Generator/blob/main/LICENSE
