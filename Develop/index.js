@@ -3,45 +3,45 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateREADME =({title, description, liveLink, HTMLlink, CSSlink, JSlink, extraLinks, altTextOne, pathwayImageOne, altTextTwo, pathwayImageTwo, altTextThree, pathwayImageThree, license, licenseLink, contributions, tests, questions}) => 
-    `#${title}
+`#${title}
     
-    ## Description
-    ${description}
+## Description
+${description}
 
-    ## Installation
+## Installation
 
-    -Live Site: ${liveLink}
+-Live Site: ${liveLink}
 
-    -HTML Link: ${HTMLlink}
+-HTML Link: ${HTMLlink}
 
-    -CSS Link: ${CSSlink}
+-CSS Link: ${CSSlink}
 
-    -Javascript Link: ${JSlink}
+-Javascript Link: ${JSlink}
 
-    -Other Links: ${extraLinks}
+-Other Links: ${extraLinks}
 
-    ## Usage
+## Usage
 
-    ![${altTextOne}](${pathwayImageOne})
+![${altTextOne}](${pathwayImageOne})
 
-    ![${altTextTwo}](${pathwayImageTwo})
+![${altTextTwo}](${pathwayImageTwo})
 
-    ![${altTextThree}](${pathwayImageThree})
+![${altTextThree}](${pathwayImageThree})
 
-    ## License
-    ${license}
+## License
+${license}
 
-    ${licenseLink}
+${licenseLink}
 
-    ## Contibutions
-    ${contributions}
+## Contibutions
+${contributions}
 
-    ## Testing
-    ${tests}
+## Testing
+${tests}
 
-    ## Questions
-    ${questions}
-    `;
+## Questions
+${questions}
+`;
 
 
 // TODO: Create an array of questions for user input
