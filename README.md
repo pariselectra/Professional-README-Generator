@@ -7,17 +7,13 @@
 
 ## Installation
 
-    -Javascript Link: javascriptlink.com
+    -Javascript Link: https://github.com/pariselectra/Professional-README-Generator/blob/main/Develop/index.js
 
-    -Other Links: usefullink.com
+    -Other Links: https://github.com/pariselectra/Professional-README-Generator/blob/main/Develop/screen%20recording/Screen%20Recording%202022-10-20%20at%2011.22.39%20PM.mov
 
 ## Usage
 
-    ![first image description](linkfirstimage.com)
-
-    ![second image description](linksecondimage.com)
-
-    ![third image description](linkthirdimage.com)
+    ![demonstration](./Develop/screen%20recording/Screen%20Recording%202022-10-20%20at%2011.22.39%20PM.mov)
 
 ## License
     MIT License
